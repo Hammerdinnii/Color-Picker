@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Color Picker</h1>
+            <p>Upload an image and click anywhere to grab the color.</p>
+        </header>
+
+        <div class="controls-panel">
+            <label class="custom-file-upload">
+                <input type="file" id="imageLoader" accept="image/*">
+                Upload Image
+            </label>
+
+            <div class="color-display">
+                <div class="color-preview" id="colorPreview"></div>
+                <div class="color-values">
+                    <span id="hexValue">#FFFFFF</span>
+                    <span id="rgbValue">rgb(255, 255, 255)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="imageCanvas"></canvas>
+            <div id="instruction" class="instruction-overlay">Image will appear here</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
